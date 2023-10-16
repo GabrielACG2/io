@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">cine</string>
     <string name="correo">correo</string>
     <string name="contrasenia">contraseña</string>
     <string name="usuario">Usuario</string>
@@ -9,6 +9,8 @@
     <string name="registrate">Crear Cuenta</string>
     <string name="btnantay">Cine Antay</string>
     <string name="btnplanet">Cine Planet</string>
+    <string name="menu2">entradas</string>
+    <string name="menu1">inicio</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
