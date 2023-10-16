@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="correo">correo</string>
+    <string name="contrasenia">contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasenia2">Reingrese Contraseña</string>
+    <string name="btningresar">ingresar</string>
+    <string name="btnregistra">registrar</string>
+    <string name="registrate">Crear Cuenta</string>
+    <string name="btnantay">Cine Antay</string>
+    <string name="btnplanet">Cine Planet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
