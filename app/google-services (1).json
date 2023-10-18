@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "666288526482",
-    "project_id": "iot1-4076c",
-    "storage_bucket": "iot1-4076c.appspot.com"
+    "project_number": "250850079647",
+    "project_id": "iot2-61a57",
+    "storage_bucket": "iot2-61a57.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:666288526482:android:9f8765fc07ecccf414c24b",
+        "mobilesdk_app_id": "1:250850079647:android:af21866fbd216faf1c43aa",
         "android_client_info": {
           "package_name": "com.example.myapplication"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDI0b05ghYBzcmPEikGrQmgqinLPVCjU2g"
+          "current_key": "AIzaSyBhbAfvhHbVUsiVncBPy8Rdlh71I6zKUDM"
         }
       ],
       "services": {
