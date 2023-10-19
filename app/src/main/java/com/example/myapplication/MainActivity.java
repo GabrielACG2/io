@@ -4,21 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
+import org.jetbrains.annotations.Nullable;
+
 
 public class MainActivity extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;
+    static final int GALLERY_INTENT = 2;
     private StorageReference mStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mStorage = FirebaseStorage.getInstance().getReference();
+
     }
     public void login(View v){
         EditText corre = this.findViewById(R.id.correo);
@@ -39,10 +48,20 @@ public class MainActivity extends AppCompatActivity {
     }
     public void cargar_imagen(view v){
         Permisos permiso= new Permisos(getApplicationContext());
-        if (permiso.checkPermissionREAD_EXTERNAL_STORAGE(this)){
+        if (permiso.checkPermissionREAD_EXTERNAL_STORAGE(this)) {
             Intent openPictureIntent = new Intent(Intent.ACTION_PICK);
             openPictureIntent.setType("image/*");
-            startActivityForResult(takePictureIntent,;);
+            startActivityForResult(openPictureIntent, GALLERY_INTENT);
+        }
+    }
+    @Override
+    protected void  onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+        if(resultCode == GALLERY_INTENT && resultCode == RESULT_OK) {
+            Uri uri= data.getData();
+            StorageReference filePath = mStorage.child("fotos").child(uri.getLastPathSegment());
+            filePath.putfile(uri).addOnSuccessListener(new OnSuccesListenet<TaskSnapshot.TaskSnap);
+        }
         }
     }
 }
