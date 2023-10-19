@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,8 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+    static final int REQUEST_IMAGE_CAPTURE = 1;
+    private StorageReference mStorage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +36,13 @@ public class MainActivity extends AppCompatActivity {
     public void crearCuenta(View v){
         Intent i = new Intent(this,RegistraCuenta.class);
         startActivity(i);
+    }
+    public void cargar_imagen(view v){
+        Permisos permiso= new Permisos(getApplicationContext());
+        if (permiso.checkPermissionREAD_EXTERNAL_STORAGE(this)){
+            Intent openPictureIntent = new Intent(Intent.ACTION_PICK);
+            openPictureIntent.setType("image/*");
+            startActivityForResult(takePictureIntent,;);
+        }
     }
 }
