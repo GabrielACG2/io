@@ -29,39 +29,23 @@ public class MainActivity extends AppCompatActivity {
         mStorage = FirebaseStorage.getInstance().getReference();
 
     }
-    public void login(View v){
+
+    public void login(View v) {
         EditText corre = this.findViewById(R.id.correo);
         String correo = corre.getText().toString();
         EditText contra = this.findViewById(R.id.contrasenia);
         String contrasenia = contra.getText().toString();
 
-        if(correo.equals("c")&&contrasenia.equals("1")){
-            Intent i = new Intent(this,pantalla1.class);
+        if (correo.equals("c") && contrasenia.equals("1")) {
+            Intent i = new Intent(this, pantalla1.class);
             startActivity(i);
-        }else{
-            Toast.makeText(this,"error en las credenciales",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "error en las credenciales", Toast.LENGTH_SHORT).show();
         }
     }
-    public void crearCuenta(View v){
-        Intent i = new Intent(this,RegistraCuenta.class);
+
+    public void crearCuenta(View v) {
+        Intent i = new Intent(this, RegistraCuenta.class);
         startActivity(i);
-    }
-    public void cargar_imagen(view v){
-        Permisos permiso= new Permisos(getApplicationContext());
-        if (permiso.checkPermissionREAD_EXTERNAL_STORAGE(this)) {
-            Intent openPictureIntent = new Intent(Intent.ACTION_PICK);
-            openPictureIntent.setType("image/*");
-            startActivityForResult(openPictureIntent, GALLERY_INTENT);
-        }
-    }
-    @Override
-    protected void  onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
-        super.onActivityResult(requestCode,resultCode,data);
-        if(resultCode == GALLERY_INTENT && resultCode == RESULT_OK) {
-            Uri uri= data.getData();
-            StorageReference filePath = mStorage.child("fotos").child(uri.getLastPathSegment());
-            filePath.putfile(uri).addOnSuccessListener(new OnSuccesListenet<TaskSnapshot.TaskSnap);
-        }
-        }
     }
 }

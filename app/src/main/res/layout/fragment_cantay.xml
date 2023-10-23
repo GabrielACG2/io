@@ -7,12 +7,42 @@
     android:layout_height="match_parent"
     tools:context=".cantay">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="567dp">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="476dp"
-        android:src="@drawable/_50_1000" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="406dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/capantay3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="398dp"
+            android:layout_height="176dp"
+            android:layout_marginTop="184dp"
+            android:src="@drawable/capantay2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="398dp"
+            android:layout_height="162dp"
+            android:layout_marginBottom="44dp"
+            android:src="@drawable/capantay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
