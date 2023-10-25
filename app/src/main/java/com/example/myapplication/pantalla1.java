@@ -5,14 +5,14 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
+
 import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
@@ -34,6 +34,8 @@ public class pantalla1 extends AppCompatActivity {
         Toolbar tb= (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(tb);
 
+
+
         TabLayout tl = (TabLayout) findViewById(R.id.Tablayout);
         tl.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -51,15 +53,11 @@ public class pantalla1 extends AppCompatActivity {
                         cantay a= new cantay();
                         getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,a).commit();
                         break;
+
+
                 }
 
-
-
-
-
-
             }
-
 
 
 
@@ -110,6 +108,54 @@ public class pantalla1 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+
+
+
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void grant(View v){
+        Intent i = new Intent(this, grananta.class);
+        startActivity(i);
+    }
+    public void hola(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+    public void hola1(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+    public void hola2(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+    public void hola3(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+    public void hola4(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+    public void hola5(View v){
+        Intent i = new Intent(this, MainActivity2.class);
+        startActivity(i);
+    }
+
 
 
 }

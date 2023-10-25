@@ -11,38 +11,44 @@
         android:layout_width="match_parent"
         android:layout_height="567dp">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="406dp"
-            android:layout_height="172dp"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/capantay3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.4"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="398dp"
-            android:layout_height="176dp"
-            android:layout_marginTop="184dp"
-            android:src="@drawable/capantay2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="398dp"
-            android:layout_height="162dp"
-            android:layout_marginBottom="44dp"
+        <ImageButton
+            android:id="@+id/grannt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hola"
             android:src="@drawable/capantay"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/openant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="hola2"
+            android:src="@drawable/capantay3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.355"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/megant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="hola1"
+            android:src="@drawable/capantay2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.492" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

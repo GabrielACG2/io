@@ -1,6 +1,5 @@
 package com.example.myapplication;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,10 +10,10 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link cantay#newInstance} factory method to
+ * Use the {@link grananta#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class cantay extends Fragment {
+public class grananta extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +24,7 @@ public class cantay extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public cantay() {
+    public grananta() {
         // Required empty public constructor
     }
 
@@ -35,11 +34,11 @@ public class cantay extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment cantay.
+     * @return A new instance of fragment grananta.
      */
     // TODO: Rename and change types and number of parameters
-    public static cantay newInstance(String param1, String param2) {
-        cantay fragment = new cantay();
+    public static grananta newInstance(String param1, String param2) {
+        grananta fragment = new grananta();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -56,12 +55,10 @@ public class cantay extends Fragment {
         }
     }
 
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_cantay, container, false);
+        return inflater.inflate(R.layout.fragment_grananta, container, false);
     }
-    }
+}
