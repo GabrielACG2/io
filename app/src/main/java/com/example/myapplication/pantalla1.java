@@ -12,6 +12,7 @@ import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -24,6 +25,24 @@ public class pantalla1 extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id==R.id.inicio){
+            Toast.makeText(this,"Te dirijes al inicio",Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, pantalla1.class);
+            startActivity(i);
+        }
+        else if(id==R.id.inicio2){
+            Toast.makeText(this,"Te dirijes a entradas", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(this, MainActivity5.class);
+            startActivity(i);
+        }
+
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -109,23 +128,10 @@ public class pantalla1 extends AppCompatActivity {
         });
     }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
-
-
-
-    }
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
+    //@Override
+    //public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+       // return super.onOptionsItemSelected(item);
+    //}
 
     public void grant(View v){
         Intent i = new Intent(this, grananta.class);
