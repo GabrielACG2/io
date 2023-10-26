@@ -12,7 +12,15 @@
         android:gravity="center"
         android:orientation="vertical"
         android:paddingLeft="10dp"
-        tools:context=".RegistraCuenta">
+        tools:context=".RegistraCuenta"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-41dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="compra" />
 
         <TextView
             android:id="@+id/textView"
@@ -97,7 +105,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:onClick="comprar"
-            android:text="@string/btnregistra" />
+            android:text="comprar" />
 
     </LinearLayout>
 
