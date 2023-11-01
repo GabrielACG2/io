@@ -4,23 +4,29 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/Tablayout"
+        android:id="@+id/bottombarCine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/planet"
+            android:id="@+id/tabInicio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:icon="@drawable/baseline_missed_video_call_24"
-            android:text="@string/btnplanet" />
+            android:text="Inicio" />
 
         <com.google.android.material.tabs.TabItem
-            android:id="@+id/antay"
+            android:id="@+id/tabCines"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:icon="@drawable/baseline_missed_video_call_24"
-            android:text="@string/btnantay" />
+            android:text="cines" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabEntradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_missed_video_call_24"
+            android:text="entradas" />
 
     </com.google.android.material.tabs.TabLayout>
 </LinearLayout>

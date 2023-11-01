@@ -2,53 +2,47 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/hola"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cantay">
+    tools:context=".cineAntayFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="567dp">
+        android:layout_height="573dp">
 
         <ImageButton
-            android:id="@+id/grannt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="hola"
+            android:id="@+id/imageButtonGT1"
+            android:layout_width="295dp"
+            android:layout_height="152dp"
             android:src="@drawable/capantay"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.355"
+            app:layout_constraintHorizontal_bias="0.489"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.041" />
 
         <ImageButton
-            android:id="@+id/openant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:onClick="hola2"
-            android:src="@drawable/capantay3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.355"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageButton
-            android:id="@+id/megant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="hola1"
+            android:id="@+id/imageButtonM21"
+            android:layout_width="295dp"
+            android:layout_height="152dp"
             android:src="@drawable/capantay2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.347"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.492" />
+            app:layout_constraintVertical_bias="0.452" />
 
+        <ImageButton
+            android:id="@+id/imageButtonO1"
+            android:layout_width="295dp"
+            android:layout_height="152dp"
+            android:src="@drawable/capantay3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.874" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>
